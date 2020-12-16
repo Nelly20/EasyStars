@@ -373,10 +373,42 @@ a {
     background-image: url("../img/close-hover.png");
     outline: none; }
 
+.modal-text {
+  text-align: center; }
+
+.modal-input-checkbox {
+  width: auto;
+  margin-bottom: 0; }
+
 .modal-body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center; }
+  .modal-body label {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .modal-body div {
+    width: 80%; }
+    .modal-body div input {
+      width: 100%; }
+
+.modal-label {
+  width: 100%;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 0; }
+
+.modal-footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+.modal-checkbox {
+  display: flex;
   align-items: center; }
 
 .modal-input {
@@ -390,6 +422,10 @@ a {
   .modal-input:focus {
     border-color: #ffaf36;
     outline: none; }
+
+.modal-dialog .modal-footer {
+  display: flex;
+  justify-content: center; }
 
 .modal-btn {
   padding: 0 30px;
@@ -423,21 +459,18 @@ a {
     flex-wrap: wrap;
     align-items: center; }
 
-.modal-dialog .modal-footer {
-  display: flex;
-  justify-content: center; }
-
 .password__title {
   margin-top: 100px;
   margin-bottom: 50px;
   font-size: 30px; }
 
 .password__input {
+  width: 400px;
   margin-right: 20px;
   margin-bottom: 0; }
 
 .password__btn {
-  width: 150px; }
+  padding: 10px 20px; }
 
 @media screen and (max-width: 396px) {
   .password__input {
